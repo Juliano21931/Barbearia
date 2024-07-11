@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+          body {
+            background-color: rgb(250, 0, 0);
+            margin: 0;
+            padding: 0px;
+          }
+
+          .container {
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+            color: rgb(0, 0, 0);
+          }
+
+          h1, h2, h3, h4, h5, h6 {
+            margin: 0px;
+            padding: 0px;
+          }
+          
+          .div {
+            width: 150px;
+            display: flex;
+            align-items: center;
+          }
+
+          .div-1 {
+            background-color: aqua;
+            height: 100px;
+          }
+          .div-2 {
+            background-color: yellow;
+            height: 300px;
+          }
+          .div-3 {
+            background-color: green;
+            height: 500px;
+          }
+          
+          .container-flexbox {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 30px 40px;
+          }
+    </style>
+</head>
+<body>
+    
+     <div class="container">
+         <h1>TITULO DO CONTAINER</h1>
+     </div>
+
+     <div class="container-flexbox">
+        <div class="div-1 div">1</div>
+        <div class="div-2 div">2</div>
+        <div class="div-3 div">3</div> 
+
+     </div>
+</body>
+</html>
